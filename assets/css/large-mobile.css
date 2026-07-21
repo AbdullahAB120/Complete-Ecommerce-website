@@ -1,0 +1,406 @@
+/* Start Header Section */
+.header-top {
+	display: none;
+}
+
+.header-content {
+	background: #000000;
+	padding: 20px;
+}
+.header-content img {
+	content: url('../img/footer-logo.png');
+}
+
+.header-menu {
+	display: none;
+}
+
+.header-option {
+	display: none;
+}
+/* End Header Section */
+
+
+
+/* Start Mobile Menu */
+.mobile-menu-toggle {
+	display: block;
+}
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	left: -250px;
+	display: block;
+	background: #ffffff;
+	height: 100vh;
+	width: 70vw;
+	padding: 50px 20px;
+	text-align: center;
+	overflow: hidden;
+	transition: 0.5s;
+	opacity: 0;
+	z-index: 9;
+}
+.mobile-menu.active {
+	left: 0;
+	opacity: 1;
+}
+.mobile-menu img {
+	margin-bottom: 50px ;	
+}
+.mobile-menu p {
+	text-align: left;
+	margin: 30px 0 0 15px;	
+}
+
+.mobile-menu-top {
+	text-align: center;
+}
+.mobile-menu-top li {
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 14px;
+	font-weight: 700;
+}
+.mobile-menu-top li a {
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.mobile-menu-top li a:hover {
+	color: #dc3545;
+}
+
+.mobile-dropdown {
+	position: relative;
+}
+.mobile-dropdown-menu {
+	background: #0000002a;
+	color: #ffffff;
+	display: none;
+	position: absolute;
+	border-radius: 2px;
+	top: 100%;
+	left: 0;
+	padding: 5px 0;
+	z-index: 99;
+}
+.mobile-dropdown:hover .mobile-dropdown-menu {
+	display: block;
+}
+
+.mobile-menu-option {
+	text-align: center;
+	padding: 20px 0;
+}
+.mobile-menu-option li {
+	display: inline-block;
+	margin: 5px 10px;
+}
+.mobile-menu-option-icon {
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.mobile-menu-main {
+	text-align: left;
+}
+.mobile-menu-main li {
+	list-style: none;
+	margin: 5px;
+	padding: 5px 10px;
+	font-size: 15px;
+	cursor: pointer;
+}
+.mobile-menu-main li a {
+	color: #000000;
+	text-decoration: none;
+	font-weight: 600;
+}
+.mobile-menu-main li a:hover {
+	color: #dc3545;
+}
+
+.mobile-page-dropdown {
+	position: relative;
+}
+.mobile-page-dropdown-menu {
+	display: none;
+	position: static;
+	top: 100%;
+	left: 0;
+	padding: 5px 0;
+}
+.mobile-page-dropdown-menu li a {
+	color: #000000;
+	font-size: 15px;
+}
+.mobile-page-dropdown-menu li a:hover {
+	color: #dc3545;
+}
+.mobile-page-dropdown:hover .mobile-page-dropdown-menu {
+	display: block;
+}
+/* End Mobile Menu */
+
+
+
+/* Start Hero Section */
+.swiper-slide {
+	background-position: 55%;
+	align-items: flex-start;
+	position: relative;
+}
+.swiper-slide-content {
+	width: 50%;
+	margin-left: 50px;
+	padding: 30% 0;
+}
+.swiper-slide-content h2 {
+	padding: 10px 0;
+	font-size: 32px;
+	font-weight: 750;
+	line-height: 35px;
+}
+.swiper-slide-content p {
+	margin-bottom: 20px;
+}
+
+.swiper-button-next {
+	margin-top: 35vh !important;
+	left: 160px !important;
+}
+.swiper-button-prev {
+	margin-top: 35vh !important;
+	left: 60px !important;
+}
+/* End Hero Section */
+
+
+
+/* Start Banner Section */
+.banner {
+	padding-top: 50px;
+}
+.banner-item {
+	width: 50%;
+	margin: 70px 50px;
+}
+.banner-item img {
+	width: 100%;
+	height: auto;
+}
+.banner-item h3 {
+	font-size: 25px;
+	padding: 5px 0;
+}
+
+.banner-item:nth-child(even) {
+	align-self: flex-start;
+}
+.banner-item:nth-child(odd) {
+	align-self: flex-end;
+}
+.banner-item:nth-child(2),
+.banner-item:nth-child(3) {
+	margin-top: 0;
+}
+/* End Banner Section */
+
+
+
+/* Start Product Section */
+.product {
+	padding: 50px 20px 100px 20px;
+}
+
+.filter-controls {
+	padding: 0;
+}
+.filter-controls button {
+	margin: 30px 10px;
+	font-size: 20px;
+}
+
+.product-container {
+	flex-direction: row;
+    gap: 0;
+}
+.product-item {
+    flex: 0 0 35%;
+	margin: 15px 30px;
+	text-align: center;
+}
+.product-item h6 {
+	font-size: 20px;
+	font-weight: 750;
+	padding-top: 5px;
+}
+.product-item span * {
+	margin: 0 -2.5px 0 -2.5px;
+}
+
+.product-item:hover .product-item-color {
+	opacity: 0;
+}
+/* End Product Section */
+
+
+
+/* Start Event Section */
+.event {
+	flex-direction: column;
+	padding: 50px 40px;
+}
+
+.event-filter {
+	flex: 0 0 100%;
+}
+.event-filter::before {
+	height: 120%;
+	width: 130%;
+	top: -10%;
+	left: -115%;
+}
+.event-filter button {
+	margin: 15px 0;
+	padding-left: 10px;
+	font-size: 23px;
+}
+
+.event-items {
+	flex: 0 0 100%;
+}
+.event-items .item {
+	flex-direction: column;
+}
+
+.event-item-image {
+	flex: 0 0 100%;
+	margin: 70px 0 30px 0;
+}
+
+.event-item-details {
+	flex: 0 0 100%;
+	padding: 0;
+}
+.event-item-details h2 {
+	padding: 10px 0;
+	font-size: 28px;
+	font-weight: 750;
+	line-height: 38px;
+}
+
+.count-down {
+    display: flex;
+    gap: 30px;
+}
+.count-down div {
+	width: 40px;
+    font-size: 14px;
+}
+.count-down .dynamic {
+    font-size: 30px;
+}
+.count-down div::after {
+    font-size: 28px;
+}
+/* End Event Section */
+
+
+
+/* Start Instagram Section */
+.instagram {
+	flex-direction: column;
+	padding: 50px 50px 100px 50px;
+}
+
+.instagram-img {
+	flex: 0 0 100%;
+	order: 2;
+	text-align: center;
+}
+.instagram-img img {
+	width: 32%;
+}
+
+.instagram-content {
+	flex: 0 0 100%;
+	order: 1;
+	padding: 30px 0;
+}
+.instagram-content h3 {
+	font-size: 30px;
+}
+.instagram-content p {
+	padding: 10px 0;
+}
+.instagram-content span {
+	font-size: 22px;
+}
+/* End Instagram Section */
+
+
+
+/* Start News Section */
+.news {
+	padding: 0 50px 50px 50px;
+}
+.news h3 {
+	padding: 10px 0 30px 0;
+	font-size: 25px;
+}
+
+.news-container {
+	flex-direction: column;
+}
+
+.news-item img {
+	width: 60%;
+	height: auto;
+}
+.item-details {
+	width: 50%;
+}
+/* End News Section */
+
+
+
+/* Start Footer Section */
+footer {
+	padding: 20px 40px;
+}
+
+.footer {
+	flex-direction: column;
+	padding: 50px 0 30px 0;
+}
+.footer h4 {
+	margin-top: 30px;
+	padding-bottom: 5px;
+}
+.footer div:nth-child(1),
+.footer div:nth-child(4) {
+	flex: 0 0 100%;
+}
+.footer div:nth-child(2),
+.footer div:nth-child(3) {
+	flex: 0 0 100%;
+}
+
+.footer-content p {
+	padding: 10px 0;
+}
+
+.footer-menu ul li {
+	padding: 3px 0;
+}
+
+.footer-newsletter .input-field {
+	margin: 15px 0;
+}
+.input-field .icon {
+	font-size: 25px;
+}
+/* End Footer Section */
