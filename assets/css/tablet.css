@@ -1,0 +1,293 @@
+/* Start Header Section */
+.header-top {
+	padding: 10px 50px;
+}
+.header-content {
+	padding: 20px;
+}
+.header-content ul li {
+	padding: 5px;
+}
+/* End Header Section */
+
+
+
+/* Start Hero Section */
+.swiper-slide {
+	background-position: 50%;
+}
+.swiper-slide-content {
+	width: 50%;
+	margin-left: 10%;
+}
+.swiper-slide-content h2 {
+	padding: 10px 0;
+}
+.swiper-slide-content p {
+	margin-bottom: 20px;
+}
+/* End Hero Section */
+
+
+
+/* Start Banner Section */
+.banner {
+	padding-top: 50px;
+}
+.banner-item {
+	width: 50%;
+	margin: 70px 50px;
+}
+.banner-item img {
+	width: 90%;
+	height: auto;
+}
+.banner-item h3 {
+	font-size: 25px;
+	padding: 5px 0;
+}
+
+.banner-item:nth-child(even) {
+	align-self: flex-start;
+}
+.banner-item:nth-child(odd) {
+	align-self: flex-end;
+}
+.banner-item:nth-child(2),
+.banner-item:nth-child(3) {
+	margin-top: 0;
+}
+/* End Banner Section */
+
+
+
+/* Start Product Section */
+.product {
+	padding: 50px 20px 100px 20px;
+}
+
+.filter-controls {
+	padding: 0;
+}
+.filter-controls button {
+	margin: 30px 10px;
+	font-size: 20px;
+}
+
+.product-container {
+	flex-direction: row;
+    gap: 0;
+}
+.product-item {
+    flex: 0 0 25%;
+	margin: 15px 30px;
+	text-align: center;
+}
+.product-item h6 {
+	font-size: 18px;
+	font-weight: 750;
+	padding-top: 5px;
+}
+.product-item span * {
+	margin: 0 -2.5px 0 -2.5px;
+}
+
+.product-item:hover .product-item-color {
+	opacity: 0;
+}
+/* End Product Section */
+
+
+
+/* Start Event Section */
+.event {
+	overflow: hidden;
+}
+
+.event-filter::before {
+	height: 75%;
+	width: 130%;
+	top: 10%;
+	left: -105%;
+}
+.event-filter button {
+	margin: 10px 0;
+	padding-left: 10px;
+	font-size: 26px;
+}
+
+.event-items {
+	flex: 0 0 75%;
+}
+.event-items .item {
+	display: none;
+	align-items: center;
+}
+.event-items .item.show{
+    display: flex;
+	animation: productShow 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.event-item-image {
+	flex: 0 0 40%;
+	text-align: center;
+}
+.event-item-image img {
+	height: 305px;
+	width: 350px;
+}
+
+.event-item-details h2 {
+	padding: 10px 20px 10px 0;
+	font-size: 28px;
+	line-height: 40px;
+}
+
+.count-down {
+    display: flex;
+    gap: 30px;
+}
+.count-down div {
+	width: 45px;
+    font-size: 15px;
+}
+.count-down .dynamic {
+    font-size: 30px;
+}
+.count-down div::after {
+    right: -18px;
+    top: 0;
+    font-size: 25px;
+}
+/* End Event Section */
+
+
+
+/* Start Instagram Section */
+.instagram {
+	padding: 100px 50px;
+
+}
+/* End Instagram Section */
+
+
+
+/* Start News Section */
+.news {
+	padding: 0 50px 50px 50px;
+}
+.news h3 {
+	padding: 10px 0 30px 0;
+}
+
+.news-container {
+	display: flex;
+    gap: 20px;
+	justify-content: space-around;
+}
+.news-item img {
+	width: 100%;
+	height: auto;
+}
+/* End News Section */
+
+
+
+/* Start Footer Section */
+footer {
+	padding: 5px 30px;
+}
+
+.footer {
+	padding: 50px 0 30px 0;
+}
+/* End Footer Section */
+
+
+
+
+/* Page CSS */
+
+/* Start About Page */
+.about {
+    padding: 0 10%;
+}
+
+.testimonial-info {
+    padding: 0 50px 30px 50px;
+}
+.testimonial-info span {
+    font-size: 80px;
+}
+
+.counter {
+    padding: 70px 5% 50px 5%;
+}
+.counter-item span {
+    padding: 0 10px;
+    font-size: 42px;
+}
+
+.team {
+    margin: 0 5%;
+}
+
+.client {
+    padding: 0 10% 100px 10%;
+}
+.client-container img {
+    margin-top: 60px;
+}
+/* End About Page */
+
+
+
+/* Start Shopping Cart Page */
+.cart {
+    padding: 0 5%;
+}
+
+.cart-details {
+	margin: 0 auto;
+}
+
+.cart-options {
+	margin: 0 auto;
+}
+/* End Shopping Cart Page */
+
+
+
+/* Start Checkout Page */
+.checkout {
+    gap: 50px;
+    padding: 0 10% 100px 10%;
+}
+/* Start Checkout Page */
+
+
+
+/* Start Blog-details Page */
+.blog {
+    padding: 0 10%;
+}
+.blog h2 {
+    font-size: 35px;
+    padding: 0 50px;
+}
+
+.form {
+    padding: 40px 50px;
+}
+.form input {
+    flex: 0 0 calc((100% - 30px)/2);
+}
+/* End Blog-details Page */
+
+
+
+/* Start Contact Page */
+.contact-form {
+    padding: 0 10%;
+}
+/* End Contact Page */
