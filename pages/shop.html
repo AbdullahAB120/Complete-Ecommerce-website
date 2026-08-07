@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title> Ecommerce AB - Shop </title>
+
+	<!-- Default CSS File -->
+	<link rel="stylesheet" href="../assets/css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../assets/css/pages.css" type="text/css" media="all" />
+	
+	<!-- Responsive Layout CSS -->
+	<link rel="stylesheet" href="../assets/css/mobile.css" type="text/css" media="(max-width: 575px)" />
+	<link rel="stylesheet" href="../assets/css/large-mobile.css" media="(min-width:576px) and (max-width:767px)">
+	<link rel="stylesheet" href="../assets/css/tablet.css" media="(min-width:768px) and (max-width:1199px)">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+	<!-- AOS Animation CSS -->
+	 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<p> Free shipping, 30-day return or refund guarantee. </p>
+			<ul>
+				<li><a href="./login.html"> Sign in </a></li>
+				<li><a href="./faq.html"> FAQs </a></li>
+				<li class="dropdown">
+					<a href="#" class="currency"> Usd </a>
+					<ul class="dropdown-menu">
+						<li><a href="#" data-value="USD"> USD </a></li>
+						<li><a href="#" data-value="BDT"> BDT </a></li>
+						<li><a href="#" data-value="EUR"> EUR </a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="header-content">
+			<a href="../index.html"><img src="../assets/img/logo.png" alt="Logo"></a>
+			<ul class="header-menu">
+				<li><a href="../index.html"> Home </a></li>
+				<li class="active"><a href="#"> Shop </a></li>
+				<li class="page-dropdown">
+					<a href="#"> Pages </a>
+					<ul class="page-dropdown-menu">
+						<li><a href="./about.html"> About Us </a></li>
+						<li><a href="./product.html"> Shop Details </a></li>
+						<li><a href="./cart.html"> Shopping Cart </a></li>
+						<li><a href="./checkout.html"> Checkout </a></li>
+						<li><a href="./blog-details.html"> Blog Details </a></li>
+					</ul>
+				</li>
+				<li><a href="./blog.html"> Blog </a></li>
+				<li><a href="./contact.html"> Contacts </a></li>
+			</ul>
+			<ul class="header-option">
+				<li><a href="#"><ion-icon name="search-outline" class="header-option-icon"></ion-icon></a></li>
+				<li><a href="./favourite.html"><ion-icon name="heart-outline" class="header-option-icon"></ion-icon></a></li>
+				<li><a href="./cart.html"><ion-icon name="cart-outline" class="header-option-icon"></ion-icon></a></li>
+			</ul>
+		</div>
+		<span class="mobile-menu-toggle">
+			<ion-icon name="menu-outline" class="toggle-icon"></ion-icon>
+		</span>
+		<div class="mobile-menu">
+			<img src="../assets/img/logo.png" alt="Monile Menu Logo">
+			<ul class="mobile-menu-top">
+				<li><a href="./login.html"> Sign in </a></li>
+				<li><a href="./faq.html"> FAQs </a></li>
+				<li class="mobile-dropdown">
+					<a href="#" class="mobile-currency"> Usd </a>
+					<ul class="mobile-dropdown-menu">
+						<li><a href="#" data-value="USD"> USD </a></li>
+						<li><a href="#" data-value="BDT"> BDT </a></li>
+						<li><a href="#" data-value="EUR"> EUR </a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="mobile-menu-option">
+				<li><a href="#"><ion-icon name="search-outline" class="mobile-menu-option-icon"></ion-icon></a></li>
+				<li><a href="./favourite.html"><ion-icon name="heart-outline" class="mobile-menu-option-icon"></ion-icon></a></li>
+				<li><a href="./cart.html"><ion-icon name="cart-outline" class="mobile-menu-option-icon"></ion-icon></a></li>
+			</ul>
+			<ul class="mobile-menu-main">
+				<li><a href="../index.html"> Home </a></li>
+				<li class="active"><a href="#"> Shop </a></li>
+				<li class="mobile-page-dropdown">
+					<a href="#"> Pages </a>
+					<ul class="mobile-page-dropdown-menu">
+						<li><a href="./about.html"> About Us </a></li>
+						<li><a href="./product.html"> Shop Details </a></li>
+						<li><a href="./cart.html"> Shopping Cart </a></li>
+						<li><a href="./checkout.html"> Checkout </a></li>
+						<li><a href="./blog-details.html"> Blog Details </a></li>
+					</ul>
+				</li>
+				<li><a href="./blog.html"> Blog </a></li>
+				<li><a href="./contact.html"> Contacts </a></li>
+			</ul>
+			<p> Free shipping, 30-day return or refund guarantee. </p>
+		</div>
+	</header>
+
+
+	<main>
+		<div class="navigation">
+			<h3> Shop </h3>
+			<p> Home ﹥<span> Shop </span></p>
+		</div>
+		<div class="shop">
+			<div class="product-filter">
+				<div class="search">
+					<input type="text" placeholder="Search...">
+					<ion-icon name="search-outline" class="search-icon"></ion-icon>
+				</div>
+				<div class="filter-item">
+					<div class="filter-item-title active">
+						<h3> Categories </h3>
+						<span><ion-icon name="chevron-down-outline"></ion-icon></span>
+					</div>
+					<ul class="filter-item-content show">
+						<li><a href="#"> Men (20) </a></li>
+						<li><a href="#"> Women (16) </a></li>
+						<li><a href="#"> Kids (22) </a></li>
+						<li><a href="#"> Bags (11) </a></li>
+						<li><a href="#"> Clothing (43) </a></li>
+						<li><a href="#"> Shoes (17) </a></li>
+						<li><a href="#"> Accessories (25) </a></li>
+					</ul>
+				</div>
+				<div class="filter-item">
+					<div class="filter-item-title active">
+						<h3> Branding </h3>
+						<span><ion-icon name="chevron-down-outline"></ion-icon></span>
+					</div>
+					<ul class="filter-item-content show">
+						<li><a href="#"> Louis Vuitton </a></li>
+						<li><a href="#"> Chanel </a></li>
+						<li><a href="#"> Hermes </a></li>
+						<li><a href="#"> Gucci </a></li>
+					</ul>
+				</div>
+				<div class="filter-item">
+					<div class="filter-item-title active">
+						<h3> Filter Price </h3>
+						<span><ion-icon name="chevron-down-outline"></ion-icon></span>
+					</div>
+					<ul class="filter-item-content show">
+						<li><a href="#"> $0.00 - $50.00 </a></li>
+						<li><a href="#"> $50.00 - $100.00 </a></li>
+						<li><a href="#"> $100.00 - $150.00 </a></li>
+						<li><a href="#"> $150.00 - $200.00 </a></li>
+						<li><a href="#"> $200.00 - $250.00 </a></li>
+						<li><a href="#"> $250.00+ </a></li>
+					</ul>
+				</div>
+				<div class="filter-item">
+					<div class="filter-item-title active">
+						<h3> Size </h3>
+						<span><ion-icon name="chevron-down-outline"></ion-icon></span>
+					</div>
+					<ul class="filter-item-content show size">
+						<li><a href="#"> XS </a></li>
+						<li><a href="#"> S </a></li>
+						<li><a href="#"> M </a></li>
+						<li><a href="#"> L </a></li>
+						<li><a href="#"> XL </a></li>
+						<li><a href="#"> XXL </a></li>
+						<li><a href="#"> XXXL </a></li>
+					</ul>
+				</div>
+				<div class="filter-item">
+					<div class="filter-item-title active">
+						<h3> Colors </h3>
+						<span><ion-icon name="chevron-down-outline"></ion-icon></span>
+					</div>
+					<ul class="filter-item-content show color">
+						<li><a href="#"><span style="background: #000000;"></span></a></li>
+						<li><a href="#"><span style="background: #dd0505;"></span></a></li>
+						<li><a href="#"><span style="background: #3505b0;"></span></a></li>
+						<li><a href="#"><span style="background: #aa7e06;"></span></a></li>
+						<li><a href="#"><span style="background: #13b7a9;"></span></a></li>
+						<li><a href="#"><span style="background: #c8e812;"></span></a></li>
+						<li><a href="#"><span style="background: #530303;"></span></a></li>
+						<li><a href="#"><span style="background: #e4b6b6;"></span></a></li>
+					</ul>
+				</div>
+				<a href="#" class="clear"> Clear Filter </a>
+			</div>
+			<div class="product-container">
+				<div class="product-header">
+					<div class="product-result">
+						<p> Showing 1–12 of 126 results </p>
+					</div>
+					<div class="product-sort">
+						<p> Sort by : </p>
+						<ul>
+							<li class="sort-dropdown">
+								<a href="#" class="sort-item"> Most Relevant </a><span>⮟</span>
+								<ul class="sort-dropdown-menu">
+									<li><a href="#" data-value="Most Relevant"> Most Relevant </a></li>
+									<li><a href="#" data-value="Price (Low to High)"> Price (Low to High) </a></li>
+									<li><a href="#" data-value="Price (High to Low)"> Price (High to Low) </a></li>
+									<li><a href="#" data-value="Newest"> Newest </a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="../assets/img/product/product-1.jpg" alt="Product Image 1">
+					<h6> Nick shoe </h6>
+					<span>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+					</span>
+					<h5> $67.24 </h5>
+					<div class="product-item-color">
+						<span style="background: #4401fe;"></span>
+						<span style="background: #100800;"></span>
+						<span style="background: #c16402;"></span>
+					</div>
+					<div class="product-item-options">
+						<a href="./favourite.html">
+							<ion-icon name="heart" class="icon"></ion-icon>
+						</a>
+						<a href="./cart.html">
+							<ion-icon name="cart-outline" class="icon"></ion-icon>
+						</a>
+						<a href="./product.html">
+							<ion-icon name="eye-outline" class="icon"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="../assets/img/product/product-2.jpg" alt="Product Image 2">
+					<h6> Celvin Clein Jacket </h6>
+					<span>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+					</span>
+					<h5> $76.34 </h5>
+					<div class="product-item-color">
+						<span style="background: #4401fe;"></span>
+						<span style="background: #100800;"></span>
+						<span style="background: #c16402;"></span>
+					</div>
+					<div class="product-item-options">
+						<a href="./favourite.html">
+							<ion-icon name="heart" class="icon"></ion-icon>
+						</a>
+						<a href="./cart.html">
+							<ion-icon name="cart" class="icon"></ion-icon>
+						</a>
+						<a href="./product.html">
+							<ion-icon name="eye-outline" class="icon"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="../assets/img/product/product-3.jpg" alt="Product Image 3">
+					<h6> Addidas Sniker </h6>
+					<span>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+					</span>
+					<h5> $59.48 </h5>
+					<div class="product-item-color">
+						<span style="background: #4401fe;"></span>
+						<span style="background: #100800;"></span>
+						<span style="background: #c16402;"></span>
+					</div>
+					<div class="product-item-options">
+						<a href="./favourite.html">
+							<ion-icon name="heart" class="icon"></ion-icon>
+						</a>
+						<a href="./cart.html">
+							<ion-icon name="cart" class="icon"></ion-icon>
+						</a>
+						<a href="./product.html">
+							<ion-icon name="eye-outline" class="icon"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="../assets/img/product/product-4.jpg" alt="Product Image 4">
+					<h6> Tommy H. Hoddie </h6>
+					<span>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+					</span>
+					<h5> $86.12 </h5>
+					<div class="product-item-color">
+						<span style="background: #4401fe;"></span>
+						<span style="background: #100800;"></span>
+						<span style="background: #c16402;"></span>
+					</div>
+					<div class="product-item-options">
+						<a href="./favourite.html">
+							<ion-icon name="heart-outline" class="icon"></ion-icon>
+						</a>
+						<a href="./cart.html">
+							<ion-icon name="cart-outline" class="icon"></ion-icon>
+						</a>
+						<a href="./product.html">
+							<ion-icon name="eye-outline" class="icon"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="../assets/img/product/product-5.jpg" alt="Product Image 5">
+					<h6> Otosis T-shirt </h6>
+					<span>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+					</span>
+					<h5> $37.71 </h5>
+					<div class="product-item-color">
+						<span style="background: #4401fe;"></span>
+						<span style="background: #100800;"></span>
+						<span style="background: #c16402;"></span>
+					</div>
+					<div class="product-item-options">
+						<a href="./favourite.html">
+							<ion-icon name="heart-outline" class="icon"></ion-icon>
+						</a>
+						<a href="./cart.html">
+							<ion-icon name="cart-outline" class="icon"></ion-icon>
+						</a>
+						<a href="./product.html">
+							<ion-icon name="eye-outline" class="icon"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="../assets/img/product/product-6.jpg" alt="Product Image 6">
+					<h6> Bengal Cador </h6>
+					<span>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+					</span>
+					<h5> $98.79 </h5>
+					<div class="product-item-color">
+						<span style="background: #4401fe;"></span>
+						<span style="background: #100800;"></span>
+						<span style="background: #c16402;"></span>
+					</div>
+					<div class="product-item-options">
+						<a href="./favourite.html">
+							<ion-icon name="heart" class="icon"></ion-icon>
+						</a>
+						<a href="./cart.html">
+							<ion-icon name="cart" class="icon"></ion-icon>
+						</a>
+						<a href="./product.html">
+							<ion-icon name="eye-outline" class="icon"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="../assets/img/product/product-7.jpg" alt="Product Image 7">
+					<h6> Arktic Hunter Bag </h6>
+					<span>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+					</span>
+					<h5> $49.66 </h5>
+					<div class="product-item-color">
+						<span style="background: #4401fe;"></span>
+						<span style="background: #100800;"></span>
+						<span style="background: #c16402;"></span>
+					</div>
+					<div class="product-item-options">
+						<a href="./favourite.html">
+							<ion-icon name="heart" class="icon"></ion-icon>
+						</a>
+						<a href="./cart.html">
+							<ion-icon name="cart" class="icon"></ion-icon>
+						</a>
+						<a href="./product.html">
+							<ion-icon name="eye-outline" class="icon"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="../assets/img/product/product-8.jpg" alt="Product Image 8">
+					<h6> Fevrik Polo </h6>
+					<span>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+					</span>
+					<h5> $26.28 </h5>
+					<div class="product-item-color">
+						<span style="background: #4401fe;"></span>
+						<span style="background: #100800;"></span>
+						<span style="background: #c16402;"></span>
+					</div>
+					<div class="product-item-options">
+						<a href="./favourite.html">
+							<ion-icon name="heart" class="icon"></ion-icon>
+						</a>
+						<a href="./cart.html">
+							<ion-icon name="cart-outline" class="icon"></ion-icon>
+						</a>
+						<a href="./product.html">
+							<ion-icon name="eye-outline" class="icon"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="../assets/img/product/product-9.jpg" alt="Product Image 8">
+					<h6> Terny T-shirt </h6>
+					<span>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+					</span>
+					<h5> $46.28 </h5>
+					<div class="product-item-color">
+						<span style="background: #4401fe;"></span>
+						<span style="background: #100800;"></span>
+						<span style="background: #c16402;"></span>
+					</div>
+					<div class="product-item-options">
+						<a href="./favourite.html">
+							<ion-icon name="heart-outline" class="icon"></ion-icon>
+						</a>
+						<a href="./cart.html">
+							<ion-icon name="cart-outline" class="icon"></ion-icon>
+						</a>
+						<a href="./product.html">
+							<ion-icon name="eye-outline" class="icon"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="../assets/img/product/product-10.jpg" alt="Product Image 8">
+					<h6> Oud Perfume </h6>
+					<span>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+					</span>
+					<h5> $36.28 </h5>
+					<div class="product-item-color">
+						<span style="background: #4401fe;"></span>
+						<span style="background: #100800;"></span>
+						<span style="background: #c16402;"></span>
+					</div>
+					<div class="product-item-options">
+						<a href="./favourite.html">
+							<ion-icon name="heart" class="icon"></ion-icon>
+						</a>
+						<a href="./cart.html">
+							<ion-icon name="cart-outline" class="icon"></ion-icon>
+						</a>
+						<a href="./product.html">
+							<ion-icon name="eye-outline" class="icon"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="../assets/img/product/product-11.jpg" alt="Product Image 8">
+					<h6> Bunny Bag </h6>
+					<span>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+					</span>
+					<h5> $36.28 </h5>
+					<div class="product-item-color">
+						<span style="background: #4401fe;"></span>
+						<span style="background: #100800;"></span>
+						<span style="background: #c16402;"></span>
+					</div>
+					<div class="product-item-options">
+						<a href="./favourite.html">
+							<ion-icon name="heart" class="icon"></ion-icon>
+						</a>
+						<a href="./cart.html">
+							<ion-icon name="cart-outline" class="icon"></ion-icon>
+						</a>
+						<a href="./product.html">
+							<ion-icon name="eye-outline" class="icon"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="../assets/img/product/product-12.jpg" alt="Product Image 8">
+					<h6> Iuf Hoodie </h6>
+					<span>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star" style="color:#dc8b35;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+						<ion-icon name="star-outline" style="color:#000000a0;"></ion-icon>
+					</span>
+					<h5> $56.28 </h5>
+					<div class="product-item-color">
+						<span style="background: #4401fe;"></span>
+						<span style="background: #100800;"></span>
+						<span style="background: #c16402;"></span>
+					</div>
+					<div class="product-item-options">
+						<a href="./favourite.html">
+							<ion-icon name="heart-outline" class="icon"></ion-icon>
+						</a>
+						<a href="./cart.html">
+							<ion-icon name="cart-outline" class="icon"></ion-icon>
+						</a>
+						<a href="./product.html">
+							<ion-icon name="eye-outline" class="icon"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<div class="pagination">
+					<ul>
+						<li class="active"><a href="#"> 1 </a></li>
+						<li><a href="#"> 2 </a></li>
+						<li><a href="#"> 3 </a></li>
+						<li><a href="#"> ... </a></li>
+						<li><a href="#"> 23 </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<footer>
+		<div class="footer">
+			<div class="footer-content">
+				<img src="../assets/img/footer-logo.png" alt="Logo">
+				<p> The customer is at the heart of our unique business model, which includes design. </p>
+				<img src="../assets/img/payment.png" alt="Payment Image">
+			</div>
+			<div class="footer-menu">
+				<h4> Shopping </h4>
+				<ul>
+					<li><a href="#"> Clothing Store </a></li>
+					<li><a href="#"> Trending Shoes </a></li>
+					<li><a href="#"> Accessories </a></li>
+					<li><a href="#"> Sale </a></li>
+				</ul>
+			</div>
+			<div class="footer-menu">
+				<h4> Shopping </h4>
+				<ul>
+					<li><a href="./contact.html"> Contact Us </a></li>
+					<li><a href="./checkout.html"> Payment Methods </a></li>
+					<li><a href="./checkout.html"> Delivary </a></li>
+					<li><a href="./checkout.html"> Return & Exchanges </a></li>
+				</ul>
+			</div>
+			<div class="footer-newsletter">
+				<h4> NewLetter </h4>
+				<p> Be the first to know about new arrivals, look books, sales & promos! </p>
+				<div class="input-field">
+					<input type="email" name="email" id="email" placeholder="Your email" required>
+					<ion-icon name="mail-outline" class="icon"></ion-icon>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p> Copyright © 2026 All rights reserved </p>
+		</div>
+	</footer>
+	
+
+	<!-- AOS Annimation JS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+	<!-- Ionicons JS -->
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	
+	<!-- Default JS File -->
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/shop.js"></script>
+</body>
+</html>
